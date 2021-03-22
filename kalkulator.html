@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Kalkulator</title>
+</head>
+<body>
+	<div>Membuat Kalkulator</div><br>
+	<div>
+		<label>Angka Pertama</label>
+		<input type="text" id="angka1"/>
+	</div>
+	<div>
+		<label>Angka Kedua</label>
+		<input type="text" id="angka2"/>
+	</div>
+	<div>
+		<label>Hasil</label>
+		<label id="lblhasil" class="text"="font-style=bold;">hasil</label>
+	</div>
+	<div>
+	<input class="tombol" type="button" onclick="tambah()" value="Penjumlahan">
+     <input class="tombol" type="button" onclick="kurang()" value="Pengurangan">
+     <input class="tombol" type="button" onclick="kali()" value="Perkalian">
+     <input class="tombol" type="button" onclick="bagi()" value="Pembagian">
+	</div>
+
+<script type="text/javascript">
+	function tambah(){
+		var angka1=parseFloat(document.getElementById("angka1").value);
+		var angka2=parseFloat(document.getElementById("angka2").value);
+		var hasil= angka1+angka2;
+		document.getElementById("lblhasil").innerHTML= hasil;
+	}
+	function kurang(){
+		var angka1=parseFloat(document.getElementById("angka1").value);
+		var angka2=parseFloat(document.getElementById("angka2").value);
+		var hasil= angka1-angka2;
+		document.getElementById("lblhasil").innerHTML= hasil;
+	}
+	function kali(){
+		var angka1=parseFloat(document.getElementById("angka1").value);
+		var angka2=parseFloat(document.getElementById("angka2").value);
+		var hasil= angka1*angka2;
+		document.getElementById("lblhasil").innerHTML= hasil;
+	}
+	function bagi(){
+		var angka1=parseFloat(document.getElementById("angka1").value);
+		var angka2=parseFloat(document.getElementById("angka2").value);
+		var hasil= angka1/angka2;
+		document.getElementById("lblhasil").innerHTML= hasil;
+	}
+
+
+
+
+</script>
+	
+</body>
+</html>
